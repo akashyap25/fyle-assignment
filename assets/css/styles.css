@@ -300,8 +300,13 @@ h1 {
         background-color: #FF3147;
         border-color: #FF3147;
         color: #fff;
-        width: 100%;
+        width: 100%;    
         margin: 0 auto;
+    }
+    .modalbtn:hover {
+        background-color: #cc2637;
+        border-color: #cc2637;
+        color: #fff;
     }
     
     .modal .form-check-input {
