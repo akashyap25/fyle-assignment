@@ -22,10 +22,44 @@
                     Pellentesque vitae ante at elit fringilla ac at purus. Morbi sed 
                     lacus nec risus finibus feugiat at fermentum.
                 </p>
-                <button class="btn herobtn poppins-semibold" type="button">CONTACT US</button>
+                <button class="btn herobtn poppins-semibold" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACT US</button>
             </div>
             <div class="col-md-6">
                 <img src="assets/img/hero.png" srcset="assets/img/hero.png 1x, assets/img/hero@2x.png 2x" alt="Hero Image" class="img-fluid hero-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 cormorant-sc-bold" id="exampleModalLabel">Talk to us</h1>
+                </div>
+                <div class="modal-body">
+                    <form action="https://getform.io/f/bqonkklb" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label poppins-light">Work email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control form-control-underline" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <label for="exampleInputFirstName" class="form-label poppins-light">First Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-underline" name="first-name" id="exampleInputFirstName">
+                            </div>
+                            <div class="col">
+                                <label for="exampleInputLastName" class="form-label poppins-light">Last Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-underline" name="last-name" id="exampleInputLastName">
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" name="aggrement" id="exampleCheck1">
+                            <label class="form-check-label poppins-light"  for="exampleCheck1">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+                        </div>
+                        <button type="submit" class="btn modalbtn poppins-semibold mx-auto">Contact Us</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -46,7 +80,7 @@
             
             
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-inner">
+                <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="item col-md-4">

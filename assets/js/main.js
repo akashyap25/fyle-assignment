@@ -7,10 +7,6 @@ $(document).ready(function() {
         $('#carousel').carousel(index);
     });
 
-    
-
-
-
     // Change the active indicator on slide change
     $('#carousel').on('slide.bs.carousel', function (e) {
         var index = $(e.relatedTarget).index();
@@ -38,3 +34,4 @@ $(document).ready(function() {
         $('#project-image').attr('src', imageUrl);
     });
 });
+

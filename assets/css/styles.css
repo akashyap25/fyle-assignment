@@ -260,12 +260,94 @@ h1 {
     font-weight: 700;
     font-style: normal;
   }
-  
+
+    /* modal CSS */
+
+    .modal {
+        display: none;  
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal .modal-dialog {
+        max-width: 40%;
+        margin: auto;
+    }
+    
+    .modal .modal-content {
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 25px;
+    }
+    
+    .modal .modal-header {
+        border-bottom: none;
+    }
+    
+    .modal .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .modal .modal-footer {
+        border-top: none;
+    }
+    
+    .modalbtn {
+        background-color: #FF3147;
+        border-color: #FF3147;
+        color: #fff;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .modal .form-check-input {
+        border-color: #FF3147;
+    }
+    
+    .modal .form-check-input:checked {
+        background-color: #FF3147;
+        border-color: #FF3147;
+    }
+    
+    .form-control-underline {
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+        transition: border-bottom-color 0.3s ease-in-out;
+    }
+    
+    .form-control-underline:focus {
+        border-bottom-color: #FF3147;
+    }
+    
+    .form-control-underline:focus::placeholder {
+        color: transparent;
+    }
+    
+    .form-label {
+        position: relative;
+    }
+    
+    .form-label .text-danger {
+        position: absolute;
+        top: -0.2rem;
+        right: -0.8rem;
+        font-size: 1.2rem;
+    }
+    
+    .form-control-underline:valid + .form-label .text-danger {
+        display: none;
+    }
 
 
 
-
-  @ci: carousel-item;
+/* Responsive CSS */
 
 @media (max-width: 767.98px) {
     h1 {
@@ -288,5 +370,19 @@ h1 {
         height: auto;
     }
 
+    .modal .modal-dialog {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .modal .modal-content {
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 10px;
+    }
+
     
 }
+
+
+   
